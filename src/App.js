@@ -8,6 +8,7 @@ function App() {
 				<div>Place a logo or something here</div>
 			</header>
 			<main>
+				<h1>Dictionary app</h1>
 				<Dictionary />
 			</main>
 			<footer>Coded by me</footer>
