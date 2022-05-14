@@ -1,0 +1,10 @@
+.Synonyms .synonym {
+	margin: 5px;
+	padding: 5px 7px;
+	border: 1px solid #dadce0;
+	border-radius: 25px;
+	line-height: 26px;
+}
+.Synonyms {
+	margin: 10px 0;
+}
