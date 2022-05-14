@@ -9,7 +9,7 @@ function App() {
 			</header>
 			<main>
 				<h1>Dictionary app</h1>
-				<Dictionary />
+				<Dictionary defaultKeyword="sunset" />
 			</main>
 			<footer>
 				This project was coded by{" "}
