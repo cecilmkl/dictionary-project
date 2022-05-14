@@ -1,6 +1,6 @@
 .App {
 	text-align: center;
-	background-color: #9a86a4;
+	/* background-color: #9a86a4; */
 }
 
 /* .App-header {
@@ -17,4 +17,9 @@
 footer {
 	font-size: smaller;
 	margin: 20px 0;
+}
+
+.App h1 {
+	font-size: 36px;
+	font-weight: 100;
 }

@@ -41,7 +41,7 @@ export default function Dictionary(props) {
 						type="search"
 						onChange={handleKeywordChange}
 						autoFocus={true}
-						placeholder="Search for a word"
+						defaultValue={props.defaultKeyword}
 					/>
 					<i className="bi bi-search mx-2"></i>
 				</form>
