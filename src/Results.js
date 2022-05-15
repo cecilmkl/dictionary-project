@@ -3,6 +3,8 @@ import "./Results.css";
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
+import Photos from "./Photos";
+
 export default function Results(props) {
 	// function search(){
 	// 		let pexelApiKey =
@@ -22,16 +24,22 @@ export default function Results(props) {
 						</span>
 					);
 				})}
-
-				{props.results.meanings.map(function (meaning, index) {
-					return (
-						<div key={index}>
-							<section>
-								<Meaning meaning={meaning} />
-							</section>
-						</div>
-					);
-				})}
+				<div className="row">
+					<div className="col-8">
+						{props.results.meanings.map(function (meaning, index) {
+							return (
+								<div key={index}>
+									<section>
+										<Meaning meaning={meaning} />
+									</section>
+								</div>
+							);
+						})}
+					</div>
+					<div className="col-4">
+						<Photos photos={props.photos} />
+					</div>
+				</div>
 			</div>
 		);
 	} else {
