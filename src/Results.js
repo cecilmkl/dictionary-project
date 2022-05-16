@@ -24,7 +24,7 @@ export default function Results(props) {
 						</span>
 					);
 				})}
-				<div className="row">
+				<div className="row limit-height">
 					<div className="col-8">
 						{props.results.meanings.map(function (meaning, index) {
 							return (

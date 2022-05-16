@@ -6,6 +6,8 @@
 	line-height: 30px;
 	display: inline-block;
 	font-size: 14px;
+	min-width: 45px;
+	text-align: center;
 }
 .Synonyms {
 	margin: 10px 0;

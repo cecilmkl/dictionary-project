@@ -2,3 +2,13 @@
 	text-align: left;
 	margin-top: 20px;
 }
+
+.limit-height {
+	overflow: hidden;
+	height: calc(100vh - 278px);
+}
+
+.limit-height > * {
+	overflow-y: scroll;
+	height: 100%;
+}
