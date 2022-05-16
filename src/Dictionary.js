@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Dictionary.css";
+
 import Results from "./Results";
-// import Photos from "./Photos";
+import "./Dictionary.css";
 
 export default function Dictionary(props) {
 	let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -25,7 +25,7 @@ export default function Dictionary(props) {
 
 		let pexelApiKey =
 			"563492ad6f91700001000001566268bef93846b69cb0333d2bc6f6b0";
-		let pexelApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=20`;
+		let pexelApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
 		let headers = { Authorization: `Bearer ${pexelApiKey}` };
 		axios.get(pexelApiUrl, { headers: headers }).then(handlePexelResponse);
 	}
@@ -37,7 +37,7 @@ export default function Dictionary(props) {
 
 	function handleKeywordChange(event) {
 		event.preventDefault();
-		setKeyword(event.target.value); // will store value of form when something is changed!
+		setKeyword(event.target.value);
 	}
 
 	function load() {
@@ -58,14 +58,6 @@ export default function Dictionary(props) {
 					<i className="bi bi-search mx-2"></i>
 				</form>
 				<Results results={results} photos={photos} />
-				{/* <div className="row">
-					<div className="col-8">
-						<Results results={results} />
-					</div>
-					<div className="col-4">
-						<Photos photos={photos} />
-					</div>
-				</div> */}
 			</div>
 		);
 	} else {

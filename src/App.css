@@ -8,7 +8,11 @@
 	font-weight: 100;
 }
 
-footer {
+.App footer {
 	font-size: smaller;
 	margin: 20px 0;
+}
+
+.App a {
+	color: inherit;
 }

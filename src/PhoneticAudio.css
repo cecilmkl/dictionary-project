@@ -1,0 +1,12 @@
+.PhoneticAudio button {
+	background: transparent;
+	border-radius: 50%;
+	transition: all 150ms ease-in-out;
+	margin-right: 5px;
+	padding: 5px 8px;
+}
+
+.PhoneticAudio button:hover {
+	background: white;
+	opacity: 0.3;
+}

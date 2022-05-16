@@ -9,4 +9,10 @@
 .Dictionary input {
 	width: 60%;
 	padding: 6px 4px;
+	border-radius: 8px;
+	border: none;
+}
+
+.Dictionary form {
+	border-radius: 20px;
 }

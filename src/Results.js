@@ -1,29 +1,19 @@
 import React from "react";
-import "./Results.css";
 import Meaning from "./Meaning";
-import Phonetic from "./Phonetic";
-
+import PhoneticAudio from "./PhoneticAudio";
 import Photos from "./Photos";
+import "./Results.css";
 
 export default function Results(props) {
-	// function search(){
-	// 		let pexelApiKey =
-	// 		"563492ad6f91700001000001566268bef93846b69cb0333d2bc6f6b0";
-	// 	let pexelApiUrl = `https://api.pexels.com/v1/search?query=${props.results.word}&per_page=1`;
-
-	// }
-
 	if (props.results) {
 		return (
 			<div className="Results">
-				<h2>{props.results.word}</h2>
-				{props.results.phonetics.map(function (phonetic, index) {
-					return (
-						<span key={index}>
-							<Phonetic phonetic={phonetic} />
-						</span>
-					);
-				})}
+				<div className="d-inline-flex align-items-center ">
+					<PhoneticAudio audio={props.results.phonetics[0].audio} />
+					<h2>{props.results.word}</h2>
+				</div>
+
+				<div className="phonetic-text">{props.results.phonetics[0].text}</div>
 				<div className="row limit-height">
 					<div className="col-8">
 						{props.results.meanings.map(function (meaning, index) {

@@ -3,12 +3,23 @@
 	margin-top: 20px;
 }
 
-.limit-height {
+.Results h2 {
+	display: inline;
+	margin-bottom: 0;
+}
+.Results .limit-height {
 	overflow: hidden;
 	height: calc(100vh - 278px);
 }
 
-.limit-height > * {
+.Results .limit-height > * {
 	overflow-y: scroll;
 	height: 100%;
+}
+
+.Results .phonetic-text {
+	text-indent: 40px;
+	opacity: 0.8;
+	font-style: italic;
+	margin-bottom: 5px;
 }
